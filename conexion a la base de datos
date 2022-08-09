@@ -1,0 +1,9 @@
+# spring-web--tools-
+spring.datasource.dbcp2.driver-class-name=com.mysql.cj.jdbc.Driver
+spring.datasource.url=jbc:myqsl://localhost:33006/crud_estudiantes
+
+spring.datasource.username=root
+spring.datasource.password==root
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.Mysql5Dialect
+spring.jpa.show-sql=true

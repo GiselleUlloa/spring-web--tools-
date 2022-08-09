@@ -1,0 +1,121 @@
+# spring-web--tools-
+package com.example.demo.modelo;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="Crud_estudiantes")
+
+public class Crud_estudiantes {
+
+	@Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
+			
+
+	private Integer id;
+	private String  usuario_id;
+	private String  nombre ;
+	private String  apellido;
+	private String  fechanacimiento;
+	private String  email;
+	private String  programa ;
+	private String  universidad ;
+	
+	
+
+	
+	
+	
+	public Crud_estudiantes() {
+		super();
+	}
+	
+	
+	public Crud_estudiantes(Integer id, String usuario_id, String nombre, String apellido, String fechanacimiento,
+			String email, String programa, String universidad) {
+		super();
+		this.id = id;
+		this.usuario_id = usuario_id;
+		this.nombre = nombre;
+		this.apellido = apellido;
+		this.fechanacimiento = fechanacimiento;
+		this.email = email;
+		this.programa = programa;
+		this.universidad = universidad;
+	}
+
+
+	public Integer getId() {
+		return id;
+	}
+
+
+	public void setId(Integer id) {
+		this.id = id;
+	}
+
+
+
+	public String getUsuario_id() {
+		return usuario_id;
+	}
+
+
+	public void setUsuario_id(String usuario_id) {
+		this.usuario_id = usuario_id;
+	}
+
+
+	public String getNombre() {
+		return nombre;
+	}
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+
+	public String getApellido() {
+		return apellido;
+	}
+
+	public void setApellido(String apellido) {
+		this.apellido = apellido;
+	}
+
+	public String getFechanacimiento() {
+		return fechanacimiento;
+	}
+
+	public void setFechanacimiento(String fechanacimiento) {
+		this.fechanacimiento = fechanacimiento;
+	}
+
+public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public String getPrograma() {
+		return programa;
+	}
+
+	public void setPrograma(String programa) {
+		this.programa = programa;
+	}
+
+	public String getUniversidad() {
+		return universidad;
+	}
+
+	public void setUniversidad(String universidad) {
+		this.universidad = universidad;
+	}
+	
+	
+}
+

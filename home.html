@@ -1,0 +1,57 @@
+# spring-web--tools-
+<!DOCTYPE html>
+<html  xmlns:th=http://thymeleaf.org>
+<head>
+<meta charset="UTF-8">
+<title> Crud  estudiantes </title>
+</head>
+<body>
+<h1>hola  home</h1>
+<a href=""class ="btn btn-primary">nuevo usuario</a>
+<div class ="container">
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Id</th>
+      <th scope="col">usuario_id</th>
+      <th scope="col">nombre</th>
+      <th scope="col">apellido</th>
+      <th scope="col">fechanacimiento</th>
+      <th scope="col">email</th>
+      <th scope="col">programa</th>
+      <th scope="col">universidad</th>
+      <th scope="col">Acción</th>
+      <th scope="col">Acción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr th:each="crud_estudiantes:{crud_estudiantes}">
+      <th scope="row" th:text={}crud_estudiantes.id>1</th>
+       <th  th:text={}crud_estudiantes.usuario_id>1</th>
+        <th  th:text={}crud_estudiantes.nombre>1</th>
+         <th th:text={}crud_estudiantes.apellido>1</th>
+      <th  th:text={}crud_estudiantes.fechanacimiento>1</th>
+       <th  th:text={}crud_estudiantes.email>1</th>
+        <th  th:text={}crud_estudiantes.programa>1</th>
+         <th  th:text={}crud_estudiantes.universidad>1</th>
+          <th  th:text={}crud_estudiantes.id>1</th>
+           <th ></th>
+             <th ></th>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Jacob</td>
+      <td>Thornton</td>
+      <td>@fat</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td colspan="2">Larry the Bird</td>
+      <td>@twitter</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+</body>
+</html>

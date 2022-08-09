@@ -1,0 +1,25 @@
+# spring-web--tools-
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+
+import  com.example.demo.repository.Crud_estudianteRespository;
+@Controller
+@RequestMapping("/crud_estudiantes" )// http:localhost:8080/crud_estudiantes
+
+
+
+public class crud_estudiantescontrolador {
+
+@Autowired 
+	
+private  Crud_estudianteRespository     crud_estudianteRepository ; 
+
+
+@GetMapping("")
+public String home () {
+	return "home";
+	
+}
